@@ -86,7 +86,7 @@ $(document).ready(function(){
             function(response){
             	$imgList.html('');
                 response.forEach(function(response) {
-                    $imgList.append('<div class="full col-md-offset-1 col-md-3 col-lg-2"><div><img class="actualPic img-responsive" src="'+response.photo+'"></div><div class="person">'+response.username+'</div><div class="comments">'+response.caption+'</div></div>')
+                    $imgList.append('<div class="full col-md-offset-1 col-md-3 col-lg-2"><div class="person">'+response.username+'</div><div><img class="actualPic img-responsive" src="'+response.photo+'"></div><div class="comments">'+response.caption+'</div></div>')
             });
             },
             'json'
