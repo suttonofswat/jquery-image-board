@@ -1,7 +1,42 @@
+.loginBG{
+	z-index: 9999;
+	position: fixed;
+	background-color: rgba(211, 211, 211, 0.5);
+	height: 100%;
+	width:100%;
+}
+.logSign{
+	margin: 20% 20%;
+	background-color: #c37d7d;
+	padding: 10% 20%;
+	border-radius: 2em;
+		div{
+			margin: 1em 0;
+		}
+		span{
+			color:white;
+			font-size:2em;
+			margin-bottom:3em;
+		}
+}
+.navbar{
+	margin-bottom:0;
+}
+.username{
+	margin-bottom: .5em;
+}
+.password{
+	margin-bottom: .5em;
+}
+
 .btn-primary{
 	margin-top:.4em;
 }
 #imgForm{
+	background-color: #c37d7d;
+	padding: 1em;
+}
+.logSign{
 	padding: 2em;
 	text-align:center;
 
@@ -16,38 +51,47 @@
 
 #imgUrl{
 	padding: 1em;
-	margin-bottom:1em;
+	margin:1em;
 	width:60%;
 
 }
 #imgDesc{
 	padding: 1em;
-	margin-bottom:1em;
+	margin:1em;
 	width:60%;
+
 	
 }
-#imgList{
-	text-align:center;
-	
-}
+
 .actualPic{
-	width: 100%;
 	height:100%;
-	border: 1px solid #ccc;
+	width: 100%;
+	
 	
 }
-.background{
-	padding: 2em 5em;
-	text-align: center;
-}
+
 .comments{
 	padding: 2em;
-	margin-bottom: 2em;
-	border: 1px solid #ccc;
-	
+	box-sizing: border-box;
 }
 
 .full{
 	box-shadow: 10px 5px 5px #ccc;
+	border: 1px solid #ccc;
+	overflow:hidden;
+	height: 100%;
+	width: 100%;
+	padding:0;
+	margin: 3em auto;
+
 }
 
+@media screen and (min-width:992px){
+	.full{
+		height: 25%;
+		width: 22%;
+		margin: 1em;
+		box-sizing:border-box;
+	}
+	
+}
